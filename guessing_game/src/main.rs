@@ -6,7 +6,7 @@ fn main(){
     println!("Mon premier jeu de devinette");
     println!("Entrer votre valeur");
 
-    let mut dev = string::new();
+    let mut dev = String::new();
 
 
     io::stdin()

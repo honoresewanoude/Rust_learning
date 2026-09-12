@@ -10,7 +10,8 @@ fn main(){
 
 
     io::stdin()
-        .read_line(&mut dev);
+        .read_line(&mut dev)
+        .expect("Erreur de lecture");
 
     println!("Votre nombre deviner est : {} ", dev);
 }

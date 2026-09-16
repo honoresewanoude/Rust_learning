@@ -7,11 +7,6 @@ fn main(){
    
     println!("Mon premier jeu de devinette");
 
-    
-
-    
-    println!("Entrer votre valeur");
-
     let nombre_secret = rand::thread_rng().gen_range(1..=100);
 
     
@@ -19,9 +14,10 @@ fn main(){
     //let dev: u32 = dev.trim().parse().expect("S'il vous plait saisissez un nombre");
 
     loop {
-
-    let mut dev = String::new();
     
+    println!("Entrer votre valeur");
+    let mut dev = String::new();
+
     io::stdin()
         .read_line(&mut dev)
         .expect("Erreur de lecture");

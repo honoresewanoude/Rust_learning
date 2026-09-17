@@ -1,0 +1,6 @@
+[package]
+name = "variable_datatype_function_controlflow_comment"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

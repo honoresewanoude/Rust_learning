@@ -1,5 +1,22 @@
 use std::io;
 
+//fonctions
+fn devine_tableau(){
+
+    let nom : [&str;6] = ["Honoré","Marc","Jeannot","Caster","Oriel","Rose"];
+    println!("Les noms du tableau sont : {}, {}, {}, {}, {}, {}",nom[0],nom[1],nom[2],nom[3],nom[4],nom[5]);
+
+}
+
+fn comparaison(y : i32, x : i32) -> String {
+
+    if x > y {
+        format!(" {x} est plus grang que {x}")
+    } else{
+        format!("nous sommes dans un cas d'inferiorité ou d'égalité")
+    } 
+}
+
 fn main(){
     
     //utilisation et déclaration des variables
@@ -34,4 +51,9 @@ fn main(){
     let y = age_reel + 5;
 
     println!("Dans 5 ans vous aurez : {}",y);
+
+    devine_tableau();
+    println!("{}",comparaison(122, 78));
 }
+
+

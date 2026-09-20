@@ -17,6 +17,54 @@ fn comparaison(y : i32, x : i32) -> String {
     } 
 }
 
+fn analyse_nombre(nombres: i32) -> i32 {
+
+    let mut nombre: i32 = nombres;
+
+    let categorie = if nombre > 0 {
+        "POSITIF"
+    } else if nombre == 0 {
+        "ZERO"
+    } else {
+        "NEGATIF"
+    };
+
+    println!("{}",categorie);
+
+
+    if nombre % 2 == 0{
+        println!("NOMBRE PAIR");
+    } else {
+        println!("NOMBRE IMPAIRE");
+    }
+
+    for number in  1..=nombre {
+
+        if number % 2 == 0 {
+            continue;
+        }
+        println!("Les nombres sont : {number}");
+    }
+
+    while nombre >= 0 {
+        println!("{}",nombre);
+        nombre = nombre -1;
+    }
+
+    let mut recherche : i32 = 1;
+
+    loop {
+        if recherche % 3 == 0 && recherche % 5 == 0 {
+            break recherche;
+        }
+
+        recherche += 1;
+    }
+
+
+
+}
+
 fn main(){
     
     //utilisation et déclaration des variables
@@ -54,6 +102,9 @@ fn main(){
 
     devine_tableau();
     println!("{}",comparaison(122, 78));
+
+    let res = analyse_nombre(12);
+    println!("{}",res);
 }
 
 

@@ -89,6 +89,34 @@ fn main() {
     println!("{r3}");
 }
 
+EXO9:
+{
+    fn modifier(s: &mut String) {
+    s.push_str(" !");
+}
+
+fn longueur(s: &String) -> usize {
+    s.len()
+}
+
+fn main() {
+    let mut message = String::from("Bonjour");
+
+    let r1 = &message;
+    let r2 = &message;
+
+    println!("{r1}");
+    println!("{r2}");
+
+    let taille = longueur(&message);
+
+    modifier(&mut message);
+
+    println!("Taille : {taille}");
+    println!("Message : {message}");
+}
+}
+
 Exo 1 : 
     Oui ça compile
     message possède le string
@@ -124,3 +152,10 @@ EXO 7:
 
 EXO 8:
     Non ca ne compile pas, parceque au moment où les deux premmier let voulant utiliser la valeur, le troisième let le modifie. donc il y a une sorte de conflit
+
+EXO 9:
+    Oui, ca compile.
+    Il y a trois références immuable, celle de r1 et r2, puis celle de la fonction longeur
+    r1 et r2 cessent d'être utilisés à la derniere println! de r2
+    Non    
+    le borrow mutable commence ici : modifier(&mut message);

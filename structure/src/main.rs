@@ -9,6 +9,48 @@ fn main() {
     note_info : f64,
    }
 
+   struct Serveur {
+    Nom : String,
+    Ip : String,
+    Ram : i32,
+    Allume : bool,
+   }
+
+   impl Serveur {
+    fn afficher(&self){
+        println!("Nom : {}",self.Nom);
+        println!("Ip : {}",self.Ip);
+        println!("Ram : {}",self.Ram);
+        if self.Allume == true {
+            println!("Allumer")
+        }else{
+            println!("Eteint")
+        }
+    }
+
+    fn demarrer(&mut self){
+        if self.Allume  == false{
+            self.Allume = true;
+        }
+    }
+
+    fn est_suffisant(&self, other : i32) -> bool {
+         self.Ram >= other 
+    }
+
+    fn nouveau (nom : String, ip : String, ram : i32) -> Serveur {
+        Serveur {
+            Nom : nom,
+            Ip : ip,
+            Ram : ram,
+            Allume: false,
+        }
+    }
+
+   }
+
+   
+
    let mut etudiant1 = etudiant{
     name : String::from("Honoré"),
     prenom : String::from("Max"),
@@ -37,7 +79,20 @@ fn main() {
                     } else {
                 "mais je ne suis pas major de ma promo"
             });
-   
 
+    
+    let mut Server = Serveur::nouveau(
+        String::from("serveur-web"),
+        String::from("192.168.1.10"),
+        16,
+    );
+
+    Server.afficher();
+
+    Server.demarrer();
+
+    Server.afficher();
+
+    println!("RAM suffisante : {}", Server.est_suffisant(8));
 
 }

@@ -1,5 +1,9 @@
-   0.047716716s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType)/Check { test: false }/TargetInner { name: "ownership_borowing_sliceType", doc: true, ..: with_path("/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/src/main.rs", Edition2024) }
-   0.047748672s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/target/debug/.fingerprint/ownership_borowing_sliceType-5aef5354a0507d8e/bin-ownership_borowing_sliceType`
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.043907215s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType)/Check { test: false }/TargetInner { name: "ownership_borowing_sliceType", doc: true, ..: with_path("/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/src/main.rs", Edition2024) }
+   0.043943163s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/target/debug/.fingerprint/ownership_borowing_sliceType-5aef5354a0507d8e/bin-ownership_borowing_sliceType`
 
 Caused by:
     No such file or directory (os error 2)
@@ -40,8 +44,8 @@ Stack backtrace:
   23: <unknown>
   24: __libc_start_main
   25: <unknown>
-   0.078391505s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType)/Check { test: true }/TargetInner { name: "ownership_borowing_sliceType", doc: true, ..: with_path("/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/src/main.rs", Edition2024) }
-   0.078407934s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/target/debug/.fingerprint/ownership_borowing_sliceType-254b9d02de7d7ca0/test-bin-ownership_borowing_sliceType`
+   0.087442616s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType)/Check { test: true }/TargetInner { name: "ownership_borowing_sliceType", doc: true, ..: with_path("/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/src/main.rs", Edition2024) }
+   0.087464050s  INFO prepare_target{force=false package_id=ownership_borowing_sliceType v0.1.0 (/home/msh-cyber/Rust_learning/ownership_borowing_sliceType) target="ownership_borowing_sliceType"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/msh-cyber/Rust_learning/ownership_borowing_sliceType/target/debug/.fingerprint/ownership_borowing_sliceType-254b9d02de7d7ca0/test-bin-ownership_borowing_sliceType`
 
 Caused by:
     No such file or directory (os error 2)
